@@ -30,7 +30,7 @@ function Lesson_02() {
             <div className='button-control'>
                 <Button />
             </div>
-            <div className='card-container'>
+            <div className='card-container2'>
                 <p className='card-info'>User Card</p>
                 <img className='avatar' src={user.avatarURL} alt="User Avatar" />
                 <p className='card-info'>Full Name: {getFullName()}</p>

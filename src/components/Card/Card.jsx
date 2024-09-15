@@ -1,4 +1,5 @@
-import './styles.css';
+import './styles2.css';
+import userAvatar from './homer.jpg'
 
 /* 
 Создайте компонент "Card" в папке "components". В нем нужно создать карточку с информацией о вымышленном пользователе Гомере Симпсоне:
@@ -17,8 +18,8 @@ function Card() {
         lastName: "Simpson",
         job: "Nuclear Safety Inspector",
         hobbies: "Eating, watching TV, and drinking beer",
-        avatarURL:
-        "https://cdn.domestika.org/c_fill,dpr_auto,f_auto,q_auto,w_1200/v1713447975/blog-post-open-graph-covers/000/013/111/13111-original.jpg?1713447975",
+        avatarURL: userAvatar
+      
     };
 
     const getFullName = () => {
@@ -26,13 +27,17 @@ function Card() {
       }
 
       return (
-        <div className='card-container'>
-                <p className='card-info'>User Card</p>
-                <img className='avatar' src={user.avatarURL} alt="User Avatar" />
+        <div className='cardBox'>
+            <div className='card-container'>
+                <p className='card-info1'>User Card</p>
                 <p className='card-info'>Full Name: {getFullName()}</p>
                 <p className='card-info'>Job: {user.job}</p>
                 <p className='card-info'>Hobbies: {user.hobbies}</p>
             </div>
+            <div className='ava'>
+                <img className='avatar' src={user.avatarURL} alt="User Avatar" />
+            </div>
+        </div>
         
       );
 }
