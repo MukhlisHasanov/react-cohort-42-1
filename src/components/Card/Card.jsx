@@ -1,5 +1,5 @@
-import './styles2.css';
-import userAvatar from './homer.jpg'
+import "./styles.css";
+import userAvatar from "./homer.jpg";
 
 /* 
 Создайте компонент "Card" в папке "components". В нем нужно создать карточку с информацией о вымышленном пользователе Гомере Симпсоне:
@@ -13,33 +13,31 @@ import userAvatar from './homer.jpg'
 */
 
 function Card() {
-    const user = {
-        firstName: "Homer",
-        lastName: "Simpson",
-        job: "Nuclear Safety Inspector",
-        hobbies: "Eating, watching TV, and drinking beer",
-        avatarURL: userAvatar
-      
-    };
+  const user = {
+    firstName: "Homer",
+    lastName: "Simpson",
+    job: "Nuclear Safety Inspector",
+    hobbies: "Eating, watching TV, and drinking beer",
+    avatarURL: userAvatar,
+  };
 
-    const getFullName = () => {
-        return `${user.firstName} ${user.lastName}`
-      }
+  const getFullName = () => {
+    return `${user.firstName} ${user.lastName}`;
+  };
 
-      return (
-        <div className='cardBox'>
-            <div className='card-container'>
-                <p className='card-info1'>User Card</p>
-                <p className='card-info'>Full Name: {getFullName()}</p>
-                <p className='card-info'>Job: {user.job}</p>
-                <p className='card-info'>Hobbies: {user.hobbies}</p>
-            </div>
-            <div className='ava'>
-                <img className='avatar' src={user.avatarURL} alt="User Avatar" />
-            </div>
-        </div>
-        
-      );
+  return (
+    <div className="cardBox">
+      <div className="card-container">
+        <p className="card-title">User Card</p>
+        <p className="card-info">Full Name: {getFullName()}</p>
+        <p className="card-info">Job: {user.job}</p>
+        <p className="card-info">Hobbies: {user.hobbies}</p>
+      </div>
+      <div className="ava">
+        <img className="avatar" src={user.avatarURL} alt="User Avatar" />
+      </div>
+    </div>
+  );
 }
 
 export default Card;
