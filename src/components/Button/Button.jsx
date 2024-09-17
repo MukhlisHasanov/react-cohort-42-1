@@ -1,7 +1,7 @@
-import './styles.css';
+import "./styles.css";
 
 function Button() {
-    return <button className='button-component'>Send</button>
+  return <button className="button-component">Send</button>;
 }
 
-export default Button
+export default Button;
