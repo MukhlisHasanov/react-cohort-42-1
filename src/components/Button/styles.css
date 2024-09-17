@@ -1,12 +1,16 @@
 .button-component {
-  outline: none;
-  width: 100%;
-  height: 50px;
-  border: none;
-  background-color: blue;
-  color: white;
+  /* outline: none;
+  border: none; */
+  width: 470px;
+  height: 70px;  
+  background-color: rgba(31, 39, 245, 1);
+  border-radius: 4px;
+  padding: 20px, 54px, 20px, 54px;
+  gap: 10px;
+  font-family: Lato;
+  font-weight: 600;
   font-size: 20px;
-  font-weight: bold;
-  border-radius: 6px;
-  cursor: pointer;
+  line-height: 30px;
+  align-items: center;  
+  color: rgba(255, 255, 255, 1);
 }
