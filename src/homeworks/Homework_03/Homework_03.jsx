@@ -1,9 +1,9 @@
-import Button from "../../components/Button/Button";
+import LoginForm from "../../components/LoginForm/LoginForm";
 
 function Homework_03() {
   return (
-    <div className="button-component">
-      <Button />
+    <div className="login-component">
+      <LoginForm />
     </div>
   );
 }
