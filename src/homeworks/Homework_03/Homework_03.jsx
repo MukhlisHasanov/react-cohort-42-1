@@ -1,8 +1,10 @@
 import LoginForm from "../../components/LoginForm/LoginForm";
 
+import "./styles.css";
+
 function Homework_03() {
   return (
-    <div className="login-component">
+    <div className="page-wrapper">
       <LoginForm />
     </div>
   );

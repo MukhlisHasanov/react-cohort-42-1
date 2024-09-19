@@ -1,46 +1,29 @@
 import Button from "../Button/Button";
 import Input from "../Input/Input";
-import "./styles.css"
+
+import "./styles.css";
 
 function LoginForm() {
-  const inputEmail = {
-    inputName: "Email",
-    inputType: "email",
-    inputPlaceholder: "Enter your email",
-    inputLabel: "Email",
-  };
-
-  const inputPassword = {
-    inputName: "Password",
-    inputType: "password",
-    inputPlaceholder: "Enter your password",
-    inputLabel: "Password",
-  };
-
-  const loginButton = {
-    buttonName: "Login",
-    buttonType: "submit",
-  };
-
   return (
-    <div className="login-component">
-      <Input
-        inputName={inputEmail.inputName}
-        inputType={inputEmail.inputType}
-        inputPlaceholder={inputEmail.inputPlaceholder}
-        inputLabel={inputEmail.inputLabel}
-      />
-      <Input
-        inputName={inputPassword.inputName}
-        inputType={inputPassword.inputType}
-        inputPlaceholder={inputPassword.inputPlaceholder}
-        inputLabel={inputPassword.inputLabel}
-      />
-      <Button
-        buttonName={loginButton.buttonName}
-        buttonType={loginButton.buttonType}
-      />
-    </div>
+    <form className="login-form-container">
+      <p className="title">Login form</p>
+      <div className="inputs-container">
+        <Input
+          id="login-email"
+          label="Email"
+          placeholder="Enter your email"
+          name="email"
+        />
+        <Input
+          id="login-password"
+          label="Password"
+          placeholder="Enter your password"
+          name="password"
+          type="password"
+        />
+      </div>
+      <Button type="submit" name="Login" />
+    </form>
   );
 }
 
