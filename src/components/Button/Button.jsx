@@ -1,10 +1,11 @@
 import "./styles.css";
 
-function Button({name, type}) {
-
-  const buttonName = name;
-  const buttonType = type;
-  return <button className="button-component" type={buttonType}>{buttonName}</button>;
+function Button({ type = "button", name, onClick }) {
+  return (
+    <button className="button-component" onClick={onClick} type={type}>
+      {name}
+    </button>
+  );
 }
 
 export default Button;
