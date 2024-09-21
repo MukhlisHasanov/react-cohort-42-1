@@ -8,10 +8,10 @@ import Lesson_05 from "./lessons/Lesson_05/Lesson_05";
 // HOMEWORKS
 import Homework_02 from "./homeworks/Homework_02/Homework_02";
 import Homework_03 from "./homeworks/Homework_03/Homework_03";
-// import Homework_04 from "./homeworks/Homework_04/Homework_04";
+import Homework_04 from "./homeworks/Homework_04/Homework_04";
 
 // CONSULTATIONS
-import Consultation_02 from "./consultations/Consultation_02/Consultaton_02";
+import Consultation_02 from "./consultations/Consultation_02/Consultation_02"
 
 import "./App.css";
 
@@ -28,13 +28,13 @@ function App() {
       {/* <Lesson_02 /> */}
       {/* <Lesson_03 /> */}
       {/* <Lesson_04 /> */}
-      <Lesson_05 />
+      {/* <Lesson_05 /> */}
       {/* Consultations */}
       {/* <Consultation_02 /> */}
       {/* Homeworks */}
       {/* <Homework_02 /> */}
       {/* <Homework_03 /> */}
-      {/* <Homework_04 /> */}
+      <Homework_04 />
     </div>
   );
 }
