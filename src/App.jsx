@@ -28,13 +28,13 @@ function App() {
       {/* <Lesson_02 /> */}
       {/* <Lesson_03 /> */}
       {/* <Lesson_04 /> */}
-      {/* <Lesson_05 /> */}
+      <Lesson_05 />
       {/* Consultations */}
       {/* <Consultation_02 /> */}
       {/* Homeworks */}
       {/* <Homework_02 /> */}
       {/* <Homework_03 /> */}
-      <Homework_04 />
+      {/* <Homework_04 /> */}
     </div>
   );
 }
